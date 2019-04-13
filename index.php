@@ -4,10 +4,10 @@
     
     
     $cursos = [
-        "Full Stack" => ["Curso de desenvolvimento web", 1000.99, "full.jpeg", "fullstack"],
-        "Marketing Digital" => ["Curso de Marketing", 1000.98, "marketing.jpg", "marketing"],
-        "UX" => ["Curso de User Experience", 9000.98, "ux.jpg", "ux"],
-        "Mobile Android" => ["Curso de apps", 1000.97, "android.png", "android"]
+        "Full Stack" => ["Curso de desenvolvimento web", "R$ 7.000,00", "full.jpeg", "fullstack"],
+        "Marketing Digital" => ["Curso de Marketing","R$ 4.000,00", "marketing.jpg", "marketing"],
+        "UX" => ["Curso de User Experience", "R$ 4.000,00", "ux.jpg", "ux"],
+        "Mobile Android" => ["Curso de apps", "R$ 3.000,00", "android.png", "android"]
     ];
 
     

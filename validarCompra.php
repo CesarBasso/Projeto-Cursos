@@ -1,9 +1,9 @@
 <?php
    include "inc/head.php";
    include "inc/header.php";
-   require "inc/funcoes.php";
+   require "req/funcoesValidacao.php";
    
-   $nome = $_REQUEST["nomeCompleto"];
+    $nome = $_REQUEST["nomeCompleto"];
     $cpf = $_REQUEST["cpf"];
     $nroCartao = $_REQUEST["nroCartao"];
     $validade = $_REQUEST["validade"];
