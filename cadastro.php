@@ -7,17 +7,28 @@
         $email = $_REQUEST["email"]; // ou $_POST["nome"] para validação de formulário!!!
         $senha = $_REQUEST["senha"]; // ou $_POST["nome"] para validação de formulário!!!
         $confirmarSenha = $_REQUEST["confirmarSenha"]; // ou $_POST["nome"] para validação de formulário!!!
+        // teste criptografia de senha
+        // $cadastro = md5($senha);
+        // $login = md5($senha);
+        // echo $cadastro . "<br>";
+        // echo $login;
+        // exit;
+        // $hash = password_hash($senha, PASSWORD_DEFAULT);
+        // echo $hash;
+        // exit;
 
         // echo $nome . " " . $email . " " . $senha . " " . $confirmarSenha;
         // exit;
 
         // verifica se a senha é igual a confirmar senha
         if ($senha == $confirmarSenha) {
+            //criptografando a senha
+            $senhaCrip = password_hash($senha, PASSWORD_DEFAULT);
             // criando um novo usuario
             $novoUsuario = [
                 "nome" => $nome,
                 "email" => $email,
-                "senha" => $senha,
+                "senha" => $senhaCrip
             ];      
            // cadastro seu usuário no json 
            $cadastrou = cadastrarUsuario($novoUsuario);
